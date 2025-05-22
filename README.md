@@ -1,4 +1,4 @@
-Análisis exploratorio de datos (EDA) bastante completo y prueba de modelo con regresión logística.
+Análisis exploratorio de datos (EDA) y prueba de modelo con regresión logística.
 Histogramas
 
 Los histogramas de variables como Pregnancies, BMI, Age muestran la distribución y ayudan a identificar sesgos o valores atípicos.
