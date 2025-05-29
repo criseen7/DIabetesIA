@@ -1,51 +1,62 @@
-Análisis exploratorio de datos (EDA) y prueba de modelo con regresión logística.
-Histogramas
+# 🩺 Predicción de Diabetes con Regresión Logística
 
-Los histogramas de variables como Pregnancies, BMI, Age muestran la distribución y ayudan a identificar sesgos o valores atípicos.
+Este proyecto realiza un análisis exploratorio de datos (EDA) y aplica un modelo de regresión logística para predecir la presencia de diabetes en pacientes, utilizando el conjunto de datos `diabetes.csv`.
 
+---
 
-📈 Matriz de Correlación
+## 📁 Estructura del Proyecto
 
-Visualización de variables se relacionan más con el resultado (Outcome). 
+```
+DIabetesIA/
+├── DiabetesIA.ipynb       # Notebook con análisis y modelado
+├── diabetesia.py          # Script con funciones clave
+├── diabetes.csv           # Conjunto de datos utilizado
+├── README.md              # Documentación del proyecto
+└── LICENSE                # Licencia Apache 2.0
+```
 
+---
 
-⚙️ Preprocesamiento
+## ⚙️ Requisitos
 
-✅ División de datos:
+Instala las siguientes librerías con pip:
 
-train_test_split() con 20% para prueba.
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
 
+O usa el archivo `requirements.txt` incluido.
 
-✅ Escalamiento:
+---
 
-Escalar x antes de entrenar el modelo es esencial para que las variables estén en la misma escala.
+## 🚀 Ejecución
 
-✅ Entrenamiento:
+### Opción 1: Usando el Notebook
 
+Abre `DiabetesIA.ipynb` en Jupyter y ejecuta las celdas paso a paso.
 
-Intercepto y coeficientes te ayudan a interpretar la influencia de cada variable.
+### Opción 2: Usando el script
 
+Ejecuta desde la terminal:
 
-📊 Evaluación del Modelo
+```bash
+python diabetesia.py
+```
 
-✅ Predicción:
+---
 
-y_pred generado sin errores.
+## 📊 Resultados
 
+El análisis incluye:
 
-✅ Matriz de Confusión:
+- Histogramas de variables como `Pregnancies`, `BMI` y `Age`.
+- Matriz de correlación.
+- Entrenamiento de un modelo de regresión logística con evaluación (accuracy, matriz de confusión).
 
-Visualización clara con sns.heatmap.
+---
 
+## 📄 Licencia
 
-✅ Clasificación:
+Este proyecto está bajo la Licencia Apache 2.0. Consulta el archivo `LICENSE` para más detalles.
 
-Precisión global del 76%.
-
-
-Observaciones:
-
-Clase 0 (no diabético): 82% de F1.
-
-
-Clase 1 (diabético): solo 62% de F1.
+---
